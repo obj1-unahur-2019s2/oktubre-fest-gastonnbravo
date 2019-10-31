@@ -1,0 +1,33 @@
+import Marca.*
+import personas.*
+
+
+describe "primeraParte"{
+	var corona = new Rubia()
+	var guiness = new Negra()
+	var hofbrau = new Roja()
+	var jarra1 = new Jarra()
+	
+	fixture{
+		hofbrau.contenidoLupulo(8)// o 8
+		jarra1.capacidad(0.5)
+		jarra1.marca(hofbrau)
+		
+		
+	}
+	test "unaparte"{
+		assert.equals(0.04,hofbrau.graduacionAlcohol())
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
